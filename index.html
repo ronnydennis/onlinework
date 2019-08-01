@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="fa/css/all.min.css">
+    <link rel="stylesheet" href="fa/css/brands.css">
+    <link rel="stylesheet" href="fa/css/brands.min.css">
+    <link rel="stylesheet" href="fa/css/fontawesome.css">
+    <link rel="stylesheet" href="fa/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fa/css/v4-shims.min.css">
+    <link rel="stylesheet" href="fa/css/svg-with-js.css">
+    <link rel="stylesheet" href="fa/css/solid.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="jQ/jquery-ui.css">
+    <link rel="stylesheet" href="jQ/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jQ/jquery-ui.theme.css">
+
+      <meta charset="utf-8">
+      <title>essayshark.com</title>
+
+   </head>
+   <body>
+      <div class="container-fluid">
+
+      <div class="nav_bar">
+         <div class="row">
+      <div class="nav1"><a href="essayshark.html" >Home</a></div>
+      <div class="nav2"><a href="essayshark.html" >Info</a></div>
+             </div>
+         </div>
+         <div class="chat_bar">
+
+         <label class="label">Name</label><br>
+      <input  type="username" class="username" ><br>
+
+      <label class="label">Email</label><br>
+
+      <input type="email" name="" value="" class="email" ><br>
+      <button class="btn-primary btn-lg sub_btn" type="submit">Submit</button>
+      <div class="row">
+      <textarea name="name"  class="text_bar"></textarea>
+      <button class="btn" type="submit"><i class="fa fa-send fa-2x"></i>
+      </button>
+      </div>
+         </div>
+
+    
+     <script src="newjquerrydownload.js"></script>
+     <script type="text/javascript">
+
+         $('.username').on('focus',function(){
+             $('.text_bar').css({
+                display:'none',
+             });
+             $('.btn').css({
+                display:'none',
+             });
+             $('.label').css({
+                Width:'fill',
+                color:'deepskyblue',
+                //background:'black',
+                paddingTop:'3px',
+                paddingLeft:'2px',
+                marginLeft:'40%',
+                paddingRight:'2px',
+                fontSize:'12px',
+             });
+              $('.chat_bar').css({
+                 height:'280px',
+                 width:'45%',
+              });
+          });
+          $('.sub_btn').on('click',function(){
+          $('.text_bar').css({
+             display:'block',
+          });
+
+          $('.chat_bar').css({
+             height:'350px',
+          });
+
+          $('.btn').css({
+             display:'block',
+          });
+          });
+        </script>
+   </body>
+</html>
